@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando DOM</title>
+    <style>
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+
+            background-color: darkgrey;
+        }
+
+        div#botao { 
+            display: inline-block;
+            padding: 15px 15px;
+
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Iniciando DOM
+    </h1>
+
+    <p> <!-- parágrafo 0 -->
+        Aqui vai o Resultado
+    </p>
+
+    <p> <!-- parágrafo 1 -->
+        Aprendendo a usar o <strong>DOM</strong> em JS
+    </p>
+
+    <div id="botao">
+        Clique em mim
+    </div> <br>
+
+    <script>
+        let corpo = window.document.body
+
+        let p1 = window.document.getElementsByTagName('p')[1]
+
+// Selecionando por (id) - (name) - (class)
+
+        let botao = window.document.getElementById('botao')
+
+/*        let botao = window.document.getElementsByName('botao')
+
+        let botao = window.document.getElementsByClassName('botao')  */
+
+// Por seletor (Recomendável) # = id / . = class
+
+        let div = window.document.querySelector('div#botao')
+
+//innerText - É o texto dentro da tag 
+
+       window.alert('a tag esta escrito assim: ' + p1.innerText)
+
+        window.document.write('A tag esta escrita assim no formato innerHTML:  ' + p1.innerHTML)
+
+        botao.innerText = 'mudei a frase pelo js'
+
+//Posso mudar o estilo pelo java.script
+
+        p1.style.color = 'yellow'
+
+        corpo.style.textAlign = 'center'
+
+        corpo.style.backgroundImage = 'linear-gradient(to right, green, lightblue)'
+
+// por id
+
+        botao.style.border = '2px solid black'
+
+        botao.style.backgroundColor = 'white'
+
+        botao.style.color = 'black'
+    </script>
+</body>
+</html>
