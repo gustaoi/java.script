@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.5em;
+
+            background-color: darkgrey;
+        }
+
+        div#area {
+            background-color: lightgreen;
+
+            width: 350px;
+            height: 200px;
+
+            line-height: 185px;
+
+            margin: auto;
+
+            padding: 15px;
+
+            text-align: center;
+
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Metodo via HTML por (on)
+onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()" 
+-->
+    <div id="area" >
+        Interaja...
+    </div>
+
+    <script>
+        let area = window.document.getElementById('area')
+
+// modo via JS
+
+        area.addEventListener('click', clicar)
+
+        area.addEventListener('mouseenter', entrar)
+
+        area.addEventListener('mouseout', sair)
+
+        function clicar() {
+            area.innerText = 'clicou'
+
+            area.style.backgroundColor = 'lightsalmon'
+        }
+
+        function entrar() {
+            area.innerText = 'Entrou'
+        }
+
+        function saiu() {
+            area.innerText = 'Saiu'
+
+            area.style.backgroundColor = 'lightgreen'
+        }
+    </script>
+</body>
+</html>
