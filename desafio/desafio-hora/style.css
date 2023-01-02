@@ -35,7 +35,17 @@ section {
 }
 
 div#foto {
+    background-image: url(fotos/dia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 
+    width: 20vw;
+    height: 20vw;
+
+    margin: auto;
+
+    border-radius: 50%;
 }
 
 footer {
