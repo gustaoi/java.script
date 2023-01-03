@@ -10,10 +10,6 @@ body {
 }
 
 header {
-    background-color: white;
-
-    color: white;
-
     text-align: center;
 }
 
@@ -34,9 +30,15 @@ section {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
 }
 
-div#foto {
-    background-image: url(fotos/dia.jpg);
-    background-size: cover;
+div#mensagem {
+    margin: 15px;
+
+    font-weight: bold;
+    
+}
+
+img {
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
 
@@ -49,8 +51,6 @@ div#foto {
 }
 
 footer {
-    color: white;
-
     text-align: center;
 
     font-style: italic;
