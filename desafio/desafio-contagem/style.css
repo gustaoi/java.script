@@ -19,9 +19,8 @@ header {
 section {
     background-color: white;
 
-    width: 50vw;
-    height: 60vh;
-
+    width: 500px;
+     
     margin: auto;
     padding: 20px;
 
@@ -31,6 +30,8 @@ section {
 }
 
 footer {
+    color: white;
+    
     text-align: center;
 
     font-style: italic;
