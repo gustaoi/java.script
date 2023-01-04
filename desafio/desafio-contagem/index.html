@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex Repetições</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Vamos Contar
+        </h1>
+    </header>
+
+    <section>
+        <div id="idados">
+            <p>
+                <label for="iinicio">Início:</label>
+                <input type="number" name="inicio" id="iinicio" required placeholder="Número de inicio">
+            </p>
+
+            <p>
+                <label for="ifim">Fim:</label>
+                <input type="number" name="fim" id="ifim" required placeholder="Número final">
+            </p>
+
+            <p>
+                <label for="ipassos">Passos:</label>
+                <input type="number" name="passos" id="ipassos" required placeholder="Passos intervalo">
+            </p>
+
+            <p>
+                <input type="button" value="contagem" onclick="contar()">
+            </p>
+        </div>
+
+        <div id="iresultado">
+            Preparando a contagem...
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            &copy; CursoemVideo
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
