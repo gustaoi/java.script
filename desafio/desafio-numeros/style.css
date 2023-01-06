@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-color: lightseagreen;
+}
+
+header {
+    color: white;
+
+    text-align: center;
+}
+
+section {
+    background-color: white;
+
+    width: 500px;
+
+    padding: 15px;
+
+    margin: auto;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
+}
+
+div#numero {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+
+    color: white;
+}
